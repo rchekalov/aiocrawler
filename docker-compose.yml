@@ -1,0 +1,10 @@
+crawlerbot:
+  build: .
+  restart: always
+  # volumes:
+  #   - .:/
+  links:
+    - redis
+redis:
+  image: redis
+  restart: always
